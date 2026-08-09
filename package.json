@@ -1,0 +1,13 @@
+{
+  "name": "solara-smp-website",
+  "version": "1.0.0",
+  "description": "Official website for Solara SMP",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
