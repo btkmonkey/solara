@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Solara SMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Solara SMP home">
+      <img src="assets/solara-logo.png" alt="Solara SMP logo" />
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#rules">Rules</a>
+      <a href="#news">News</a>
+      <a href="#discord">Discord</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="play-small" id="copyIpTop">Play Now</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">WELCOME TO SOLARA SMP</div>
+        <h1>Your next Minecraft<br><span>adventure starts here.</span></h1>
+        <p>
+          Survive, build, trade, explore, and create your legacy in a community-driven SMP
+          built around towns, economy, progression, events, and custom experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="copyIpHero">
+            <span>⛏</span> Play Solara
+          </button>
+          <a class="btn btn-secondary" href="#discord">
+            <span>◉</span> Join Discord
+          </a>
+        </div>
+
+        <div class="quick-stats">
+          <div>
+            <strong>Season 01</strong>
+            <span>The First Frontier</span>
+          </div>
+          <div>
+            <strong>Community</strong>
+            <span>Built for long-term play</span>
+          </div>
+          <div>
+            <strong>Java Edition</strong>
+            <span>Version TBA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="logo-stage">
+          <div class="logo-orbit"></div>
+          <img src="assets/solara-logo.png" alt="Large Solara SMP logo" class="hero-logo" />
+        </div>
+
+        <div class="status-card">
+          <div class="status-top">
+            <div>
+              <span class="status-label">SERVER STATUS</span>
+              <div class="online-row">
+                <span class="status-dot"></span>
+                <strong>COMING SOON</strong>
+              </div>
+            </div>
+            <span class="status-icon">☀</span>
+          </div>
+
+          <div class="status-divider"></div>
+
+          <div class="status-info">
+            <span>Server IP</span>
+            <strong id="serverIpText">play.solara.example</strong>
+          </div>
+          <div class="status-info">
+            <span>Platform</span>
+            <strong>Java Edition</strong>
+          </div>
+          <button class="copy-ip" id="copyIpCard">Copy Server IP</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip" id="features">
+      <article>
+        <span class="feature-icon">⚔</span>
+        <div>
+          <h3>PvE & PvP</h3>
+          <p>Balanced survival with room for competition.</p>
+        </div>
+      </article>
+      <article>
+        <span class="feature-icon">💰</span>
+        <div>
+          <h3>Custom Economy</h3>
+          <p>Trade, own businesses, and build your fortune.</p>
+        </div>
+      </article>
+      <article>
+        <span class="feature-icon">🏘</span>
+        <div>
+          <h3>Towns & Claims</h3>
+          <p>Create settlements and protect what you build.</p>
+        </div>
+      </article>
+      <article>
+        <span class="feature-icon">🏆</span>
+        <div>
+          <h3>Events</h3>
+          <p>Community events, challenges, and rewards.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section-dark" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">ABOUT THE SERVER</span>
+        <h2>Build something worth remembering.</h2>
+        <p>
+          Solara SMP is being designed as a polished survival experience with a player-driven world.
+          The goal is simple: give players reasons to build, explore, trade, compete, and stay.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="info-card">
+          <span class="card-number">01</span>
+          <h3>Player-Driven World</h3>
+          <p>Towns, businesses, alliances, rivalries, and community projects shape the server.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-number">02</span>
+          <h3>Meaningful Progression</h3>
+          <p>Progress through gameplay, economy, exploration, achievements, and server events.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-number">03</span>
+          <h3>Built for Community</h3>
+          <p>Discord, events, staff support, and future website integrations keep everything connected.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="season-card">
+        <div class="season-copy">
+          <span class="eyebrow">SEASON ONE</span>
+          <h2>The First Frontier</h2>
+          <p>
+            Solara opens with a fresh world and a simple goal: turn untouched land into a living civilization.
+          </p>
+          <ul>
+            <li>Fresh survival world</li>
+            <li>Town and land systems</li>
+            <li>Player economy</li>
+            <li>Exploration progression</li>
+            <li>Community events</li>
+          </ul>
+        </div>
+        <div class="season-mark">S1</div>
+      </div>
+
+      <div class="roadmap-card">
+        <span class="eyebrow">ROADMAP</span>
+        <h2>Before Launch</h2>
+        <div class="roadmap">
+          <div class="roadmap-item done"><span></span><div><strong>Branding</strong><small>Solara SMP identity</small></div></div>
+          <div class="roadmap-item current"><span></span><div><strong>Discord & Website</strong><small>Community foundation</small></div></div>
+          <div class="roadmap-item"><span></span><div><strong>Server Setup</strong><small>Plugins, world, systems</small></div></div>
+          <div class="roadmap-item"><span></span><div><strong>Closed Beta</strong><small>Testing and balancing</small></div></div>
+          <div class="roadmap-item"><span></span><div><strong>Public Launch</strong><small>Season One begins</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="rules">
+      <div class="section-heading">
+        <span class="eyebrow">COMMUNITY STANDARDS</span>
+        <h2>Simple rules. Better server.</h2>
+      </div>
+      <div class="rules-grid">
+        <div><span>01</span><p>Respect other players and staff.</p></div>
+        <div><span>02</span><p>No cheating, exploiting, or unfair client modifications.</p></div>
+        <div><span>03</span><p>No griefing or stealing outside of allowed systems.</p></div>
+        <div><span>04</span><p>Keep chat appropriate and avoid harassment or spam.</p></div>
+        <div><span>05</span><p>Follow staff directions and use support channels for disputes.</p></div>
+        <div><span>06</span><p>More detailed rules will be published before launch.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <span class="eyebrow">LATEST UPDATES</span>
+        <h2>Solara News</h2>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card featured">
+          <div class="news-tag">PROJECT UPDATE</div>
+          <h3>Solara SMP is officially in development.</h3>
+          <p>
+            Branding, Discord infrastructure, the website, server systems, and the Season One plan
+            are being built ahead of the Minecraft launch.
+          </p>
+          <span class="news-date">August 2026</span>
+        </article>
+
+        <article class="news-card">
+          <div class="news-tag">COMING SOON</div>
+          <h3>Staff recruitment</h3>
+          <p>Applications for selected community and staff positions will open before beta.</p>
+          <span class="news-date">TBA</span>
+        </article>
+
+        <article class="news-card">
+          <div class="news-tag">SEASON ONE</div>
+          <h3>The First Frontier</h3>
+          <p>Fresh land, new towns, player businesses, exploration, and a server-wide economy.</p>
+          <span class="news-date">TBA</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="discord-section" id="discord">
+      <div class="discord-copy">
+        <span class="eyebrow">JOIN THE COMMUNITY</span>
+        <h2>Be here before the gates open.</h2>
+        <p>
+          Join the Solara SMP Discord for announcements, development updates, applications,
+          giveaways, launch information, and community events.
+        </p>
+      </div>
+      <a class="btn btn-primary discord-button" href="#" onclick="return false;">Join Solara Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/solara-logo.png" alt="Solara SMP" />
+    </div>
+    <p>© 2026 Solara SMP. Not affiliated with Mojang Studios or Microsoft.</p>
+    <div class="footer-links">
+      <a href="#rules">Rules</a>
+      <a href="#discord">Discord</a>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Server IP copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
